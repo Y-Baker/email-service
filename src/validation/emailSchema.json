@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://ieee-portal.local/email.schema.json",
+  "$id": "https://email-service.local/email.schema.json",
   "title": "EmailMessage",
   "type": "object",
   "required": ["to", "subject"],

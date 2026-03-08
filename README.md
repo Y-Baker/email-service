@@ -1,4 +1,4 @@
-# Email Service (IEEE Portal)
+# Email Service
 
 Dedicated microservice for sending transactional emails.
 
