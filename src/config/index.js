@@ -26,6 +26,8 @@ module.exports = {
   serviceAuthToken: process.env.EMAIL_SERVICE_AUTH_TOKEN || '',
   allowRemoteSheetUrl: parseBoolean(process.env.ENABLE_REMOTE_SHEET_URL, false),
   sheetUrlAllowlist: parseAllowlist(process.env.SHEET_URL_ALLOWLIST),
+  idempotencyEnabled: parseBoolean(process.env.IDEMPOTENCY_ENABLED, true),
+  idempotencyTtlMs: parseInt(process.env.IDEMPOTENCY_TTL_MS || String(5 * 60 * 1000), 10),
   mailjet: {
     apiKey: process.env.MAILJET_API_KEY,
     apiSecret: process.env.MAILJET_API_SECRET
